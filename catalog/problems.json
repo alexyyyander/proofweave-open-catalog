@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "catalog": {
     "name": "Proofweave Open Catalog",
-    "generatedAt": "2026-07-16T00:00:00Z",
-    "recordCount": 38,
+    "generatedAt": "2026-07-22T06:15:00Z",
+    "recordCount": 39,
     "policy": "policy/famous-problem-intake.md",
     "boundary": "A source-pinned record is not a claim that the literature review is current or that Proofweave has verified the mathematics."
   },
@@ -1689,6 +1689,59 @@
         "note": "Formal source imported. Open status, best-known results, and recent literature still require an independent dated review."
       },
       "priority": 70
+    },
+    {
+      "id": "problem-revision:proofweave:jacobian-counterexample-audit:main:1",
+      "slug": "jacobian-counterexample-algebraic-audit",
+      "title": "Jacobian counterexample: algebraic audit",
+      "project": {
+        "id": "project:proofweave:jacobian-counterexample-audit",
+        "slug": "proofweave-jacobian-counterexample-audit",
+        "title": "Three-dimensional Jacobian counterexample audit"
+      },
+      "subjects": [
+        "algebraic-geometry"
+      ],
+      "researchStatus": {
+        "value": "research_solved",
+        "authority": "upstream_import",
+        "proofweaveAttested": false
+      },
+      "formalization": {
+        "state": "proved",
+        "correspondence": "source_bound_unreviewed",
+        "qualifiedName": "ProofweaveJacobian.jacobian_counterexample_audit",
+        "statement": "theorem jacobian_counterexample_audit :\n    jacobianDet = (-2 : P) ∧\n    point₀ ≠ point₁ ∧ point₀ ≠ point₂ ∧ point₁ ≠ point₂ ∧\n    polynomialMap point₀ = commonImage ∧\n    polynomialMap point₁ = commonImage ∧\n    polynomialMap point₂ = commonImage ∧\n    ¬ Function.Injective polynomialMap := by\n  ..."
+      },
+      "source": {
+        "upstream": "Proofweave bounded reproduction of the public Jacobian announcement",
+        "revision": "f74629eb7fd35192f1612339a578f404c2aaac06",
+        "revisionTag": "jacobian-counterexample-audit-v1",
+        "path": "evidence/jacobian-counterexample-audit/ProofweaveJacobian.lean",
+        "url": "https://github.com/alexyyyander/proofweave-open-catalog/blob/f74629eb7fd35192f1612339a578f404c2aaac06/evidence/jacobian-counterexample-audit/ProofweaveJacobian.lean",
+        "contentHash": "sha256:05557171f31ff0beefccdfa346ac83069ec7b63c0ecf6997e895fd62bc29ee26",
+        "retrievedAt": "2026-07-22T06:15:00Z",
+        "leanToolchain": "leanprover/lean4:v4.27.0",
+        "mathlibRevision": "a3a10db0e9d66acbebf76c5e6a135066525ac900",
+        "licenseNote": "The Lean reproduction is Apache-2.0. The external announcement remains attributed to its original author."
+      },
+      "frontierAudit": {
+        "status": "in_review",
+        "literatureCheckedThrough": "2026-07-20",
+        "reviewedBy": null,
+        "priorWork": [
+          {
+            "title": "Original public announcement",
+            "url": "https://x.com/__alpoge__/status/2079028340955197566"
+          },
+          {
+            "title": "Contemporary mathematical discussion",
+            "url": "https://mathoverflow.net/questions/130777/could-the-jacobian-conjecture-be-undecidable/513385"
+          }
+        ],
+        "note": "This record covers only the displayed polynomial identities and rational collision witnesses. It does not mark the classical Jacobian Conjecture, source priority, novelty, or scholarly acceptance as independently reviewed."
+      },
+      "priority": 88
     }
   ]
 }
